@@ -1,0 +1,72 @@
+* { 
+    box-sizing: border-box; 
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1rem;
+}
+html, body { 
+    height: 100%; 
+}
+body {
+    margin: 0;
+    display: grid;
+    place-items: center; 
+    background: #02002e;
+}
+.split-button {
+    position: relative;
+    display: flex;
+    align-items: center;
+    height: 60px;
+    background: rgba(166, 166, 166, 0.45); 
+    border-radius: 8px;
+}
+.icon-center{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+button {
+    display: flex;
+    align-items: center;
+    height: 100%;
+    border: 0;
+    background: transparent;
+    cursor: pointer;
+    color: #f9f9f9; 
+    font-size: 1rem;
+}
+.split-button > button:nth-child(1) { 
+    padding: 0 24px;
+}
+.split-button > button:nth-child(2) {
+    width: 60px;
+    background: rgba(0, 0, 0, 0.12); 
+    border-top-right-radius: 8px; 
+    border-bottom-right-radius: 8px;
+}
+.menu {
+    overflow: hidden;
+    position: absolute;
+    left: 0;
+    top: 68px; z-index: 1; 
+    width: 100%;
+    translate: -30px 0;
+    opacity: 0;
+    visibility: hidden; 
+    border-radius: 8px;
+    background: rgba(166, 166, 166, 0.45); 
+    transition: 0.4s;
+}
+.menu.open { 
+    translate: 0 0;
+    opacity: 1;
+    visibility: visible;
+    padding: 10px 0;
+}
+.menu button { 
+    gap: 10px;
+    padding: 5px 18px;
+}
+.menu button:hover{
+    font-size: 1.1rem;
+}

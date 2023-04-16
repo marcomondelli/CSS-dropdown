@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="asset/style.css" /> 
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    </head> 
+
+    <body>
+        <div class="split-button">
+            <button onclick="handleMainButtonClicked()"> Dashboard </button> 
+            <button onclick="toggleDropdown()" class="icon-center"> 
+                <span id="chevron"> <i class="fa-solid fa-chevron-down"></i> </span> 
+            </button>
+            <div id="menu" class="menu">
+                <button onclick="handleMenuButtonClicked()"> 
+                    <span> <i class="fa-solid fa-gear"></i></span>
+                    Tools 
+                </button>
+                <button onclick="handleMenuButtonClicked()"> 
+                    <span> <i class="fa-solid fa-sliders"></i> </span>
+                    Setting 
+                </button>
+                <button onclick="handleMenuButtonClicked()"> 
+                    <span> <i class="fa-solid fa-user"></i> </span>
+                    Account 
+                </button>
+            <!-- more buttons --> 
+            </div> 
+        </div>
+
+    <script type="text/javascript" src="asset/script.js"> </script>
+    </body>
+</html>
